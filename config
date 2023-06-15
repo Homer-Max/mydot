@@ -1,0 +1,71 @@
+{
+    "layer": "bottom", 
+    "position": "top", 
+    "height": 50,
+    "spacing": 5, 
+
+    "margin-bottom":-11,
+    "modules-left": ["wlr/workspaces"],
+    "modules-right": ["tray","backlight","temperature","network","battery#bat0","cpu","memory","clock"],
+
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "format-active": " {icon} ",
+        "on-click": "~/.config/hypr/scripts/tools/switch_window {name}"
+    },
+
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 60,
+        "format": "{:%I:%M}",
+        "max-length": 25
+    },
+    "cpu": {
+        "interval":1,
+        "format": "{icon0} {icon1} {icon2} {icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+        "critical-threshold": 60,
+        "format-critical": "{temperatureC}°C",
+        "format": ""
+    },
+    "backlight": {
+        "device": "amdgpu_bl0",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "battery#bat0": {
+        "bat": "BAT0"
+    },
+    "network": {
+        "interface": "wlp1s0", 
+        "format-wifi": "{essid} {signalStrength}%",
+        "format-ethernet": "{ifname}",
+        "tooltip-format": "{ipaddr} via {gwaddr} {ifname}",
+        "format-linked": "{ifname}",
+        "format-disconnected": "No network",
+        "format-icons":  ["", "", "", "", "", "", "", "", ""]
+        }
+
+}
