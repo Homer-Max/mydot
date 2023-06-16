@@ -1,0 +1,94 @@
+The Meson build system
+Version: 1.0.1
+Source dir: /home/wrq/_install/backup/Waybar
+Build dir: /home/wrq/_install/backup/Waybar/build
+Build type: native build
+Project name: waybar
+Project version: 0.9.18
+C compiler for the host machine: cc (gcc 12.2.0 "cc (Ubuntu 12.2.0-17ubuntu1) 12.2.0")
+C linker for the host machine: cc ld.bfd 2.40
+C++ compiler for the host machine: c++ (gcc 12.2.0 "c++ (Ubuntu 12.2.0-17ubuntu1) 12.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.40
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C++ supports link arguments -lc++fs: NO 
+Compiler for C++ supports link arguments -lc++experimental: NO 
+Compiler for C++ supports link arguments -lstdc++fs: YES 
+Program git found: YES (/usr/bin/git)
+WARNING: You should add the boolean check kwarg to the run_command call.
+         It currently defaults to false,
+         but it will default to true in future releases of meson.
+         See also: https://github.com/mesonbuild/meson/issues/9300
+Has header "filesystem" : YES 
+Checking if "nl_langinfo with _NL_TIME_WEEK_1STDAY, _NL_TIME_FIRST_WEEKDAY" : links: YES 
+Run-time dependency threads found: YES
+Found pkg-config: /usr/bin/pkg-config (1.8.1)
+Run-time dependency fmt found: YES 9.1.0
+Run-time dependency spdlog found: YES 1.10.0
+Run-time dependency wayland-client found: YES 1.22.0
+Run-time dependency wayland-cursor found: YES 1.22.0
+Run-time dependency wayland-protocols found: YES 1.31
+Run-time dependency gtkmm-3.0 found: YES 3.24.7
+Run-time dependency dbusmenu-gtk3-0.4 found: YES 16.04.0
+Run-time dependency gio-unix-2.0 found: YES 2.76.1
+Run-time dependency jsoncpp found: YES 1.9.4
+Run-time dependency sigc++-2.0 found: YES 2.12.0
+Found CMake: /usr/bin/cmake (3.25.1)
+Run-time dependency libinotify found: NO (tried pkgconfig and cmake)
+Run-time dependency epoll-shim found: NO (tried pkgconfig and cmake)
+Run-time dependency libinput found: YES 1.22.1
+Run-time dependency libnl-3.0 found: YES 3.7.0
+Run-time dependency libnl-genl-3.0 found: YES 3.7.0
+Run-time dependency upower-glib found: YES 0.99.20
+Run-time dependency playerctl found: YES 2.4.1
+Run-time dependency libpulse found: YES 16.1
+Run-time dependency libudev found: YES 252
+Run-time dependency libevdev found: YES 1.13.0
+Run-time dependency libmpdclient found: YES 2.20
+Run-time dependency xkbregistry found: YES 1.5.0
+Run-time dependency jack found: YES 0.126.0
+Run-time dependency wireplumber-0.4 found: YES 0.4.13
+Library sndio found: YES
+Checking for function "sioctl_open" with dependency -lsndio: YES 
+Run-time dependency gtk-layer-shell-0 found: YES 0.4.0
+Run-time dependency systemd found: YES 252
+Computing int of "__cpp_lib_chrono" : 201611
+Run-time dependency date found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency date (modules: date::date, date::date-tz)
+
+Executing subproject date 
+
+date| Project name: hinnant-date
+date| Project version: undefined
+date| C++ compiler for the host machine: c++ (gcc 12.2.0 "c++ (Ubuntu 12.2.0-17ubuntu1) 12.2.0")
+date| C++ linker for the host machine: c++ ld.bfd 2.40
+date| Dependency threads found: YES unknown (cached)
+date| Build targets in project: 1
+date| Subproject date finished.
+
+Dependency date (modules: date::date, date::date-tz) from subproject subprojects/date-3.0.1 found: YES undefined
+Configuring waybar.service using configuration
+Dependency cava skipped: feature cava disabled
+Message: cava is not found. Building waybar without cava
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Program gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: /usr/bin/pkg-config (1.8.1)
+Build-time dependency scdoc found: YES 1.11.2
+Program /usr/bin/scdoc found: YES (/usr/bin/scdoc)
+Program sh found: YES (/usr/bin/sh)
+Configuring waybar.5.scd using configuration
+meson.build:477: WARNING: Source item '/home/wrq/_install/backup/Waybar/build/waybar.5.scd' cannot be converted to File object, because it is a generated file. This will become a hard error in the future.
+Run-time dependency catch2 found: YES 3.1.0
+Program clang-tidy found: YES (/usr/bin/clang-tidy)
+Build targets in project: 44
+NOTICE: Future-deprecated features used:
+ * 0.55.0: {'ExternalProgram.path'}
+ * 0.56.0: {'meson.source_root', 'dependency.get_pkgconfig_variable', 'meson.build_root'}
+
+waybar 0.9.18
+
+  Subprojects
+    date: YES
+
+Found ninja-1.11.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
