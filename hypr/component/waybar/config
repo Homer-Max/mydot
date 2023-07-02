@@ -28,17 +28,11 @@
     "pulseaudio": {
         "interval":1,
         "scroll-step": 1, 
-        "format": "{format_source}",
-        "format-bluetooth": "{volume}%",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format": "{volume}%{icon}",
+        "format-bluetooth": "{volume}%{icon}",
+        "format-bluetooth-muted": "{volume}%{icon}",
+        "format-muted": "{volume}%{icon}",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "blueman-manager"
@@ -80,12 +74,14 @@
     },
     "cpu": {
         "interval": 2,
-        "format": "{}% "
+        "format": "{}% ",
+        "on-click":"gnome-system-monitor"
         // "max-length": 10
     },
     "memory": {
         "interval":2,
-        "format": "{}% "
+        "format": "{}% ",
+        "on-click":"rofi -show drun -theme ~/.config/rofi/style.rasi"
     },
     "temperature": {
         "thermal-zone": 2,
@@ -98,7 +94,7 @@
         "interval":2,
         "device": "amdgpu_bl0",
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""],
+        "format-icons": ["",""],
         "on-scroll-up":"/usr/bin/lightup",
         "on-scroll-down":"/usr/bin/lightdown",
         "smooth-scrolling-threshold":1
@@ -111,7 +107,8 @@
             "critical": 60      
         },   
         "format": "{capacity}% {icon}",   
-        "format-icons": ["", "", "", "", ""] 
+        "format-icons": ["", "", "", "", ""],
+        "on-click":"/usr/bin/power"
         // "max-length": 25
     },
     "disk": {

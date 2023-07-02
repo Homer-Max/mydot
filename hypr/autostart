@@ -12,12 +12,13 @@ $scripts/wall $config/wallpapers/yh.jpg &
 # notification daemon
 dunst &
 
+blueman-applet &
 # light and sleep
-swayidle -w \
-	timeout 600 'bash ~/.cache/swayidle/save_backup_light.sh' \
-	resume 'bash ~/.cache/swayidle/set_backup_light.sh' \
-	timeout 1800 'sudo systemctl suspend' \
-	before-sleep 'swaylock -f -c 000000' &
+#swayidle -w \
+#	timeout 600 'bash ~/.cache/swayidle/save_backup_light.sh' \
+#	resume 'bash ~/.cache/swayidle/set_backup_light.sh' \
+#	timeout 1800 'sudo systemctl suspend' \
+#	before-sleep 'swaylock -f -c 000000' &
 
 # waybar
 /home/wrq/.config/hypr/scripts/launch_waybar &
