@@ -29,5 +29,5 @@ nm-applet &
 #ewwbar
 #/home/wrq/.config/hypr/scripts/launch_ewwbar &
 
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+/usr/local/libexec/polkit-gnome-authentication-agent-1 &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
