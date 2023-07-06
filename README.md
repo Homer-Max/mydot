@@ -33,6 +33,6 @@ brightnessctl
 ```
 git clone  https://github.com/DreamMaoMao/mydot.git
 cd mydot
-cp -r ./config/* ~/.config
+cp -r ./* ~/.config
 ```
 
