@@ -7,7 +7,7 @@ scripts=/home/wrq/.config/hypr/scripts
 export PATH="$PATH:/opt/go/bin:/home/wrq/_install/swww/target/release"
 
 # wallpaper
-$scripts/wall $config/wallpapers/yh.jpg &
+$scripts/wall $config/wallpapers/caoyuan.jpg &
 
 # notification daemon
 dunst &
