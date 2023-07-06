@@ -203,17 +203,19 @@ label:focus {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     /* background-color: #b4befe; */
     color: 	#fff;
+    font-weight: bolder;
+
 }
 
 #memory {
     background-color: #cba6f7;
-    color: 	#9a75c7;
+    color: 	#55406e;
     font-weight: bolder;
 }
 
 #disk {
     background-color: #cca45a;
-    color: #964B00;
+    color: #572e05;
 }
 
 #backlight {
@@ -247,8 +249,7 @@ label:focus {
 
 #pulseaudio {
     background-color:  	#fab387;
-    color: #bf7d54;
-    font-weight: bolder;
+    color: #734a31;
 }
 
 #pulseaudio.muted {
@@ -274,11 +275,11 @@ label:focus {
 
 #temperature.critical {
     background-color: #ce91a0 ;
-    color:#0a5234;
+    color:#50393f;
 }
 
 #tray {
-    background-color: #0e7e78;
+    background-color: #96d5dd;
 }
 
 #tray > .passive {

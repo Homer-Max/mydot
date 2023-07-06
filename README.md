@@ -1,8 +1,31 @@
-# mydot
+# dependency
 
-![image](https://github.com/DreamMaoMao/mydot/assets/30348075/8132f86a-2100-4961-bb54-95fc104fad4f)
+```
+paru -S hyprland-git waybar-hyprland-git  wofi xdg-desktop-portal-hyprland-git tty-clock-git swaylock grim slurp pokemon-colorscripts-git starship jq dunst wl-clipboard swaylock-effects-git swww-git
+```
 
+# other dependency:
+```
+nm-applet
+blueman-manager
+nautilus
+rofi
+gnome-terminal
+gnome-system-monitor 
+policykit-gnome
+fcitx
+xrdb
+wlsunset 
+wl-clip-xrdb 
+clipman
+swappy 
+brightnessctl 
+```
 
-
-https://github.com/DreamMaoMao/mydot/assets/30348075/ca9bbef2-9b08-40f5-b599-fc81f370d174
+# moving config files
+```
+git clone  https://github.com/DreamMaoMao/mydot.git
+cd mydot
+cp -r ./config/* ~/.config
+```
 
