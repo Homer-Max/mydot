@@ -42,3 +42,8 @@ cd mydot
 cp -r ./* ~/.config
 ```
 
+# Reference
+
+- https://github.com/flick0/dotfiles/tree/dreamy
+
+- https://github.com/Syndrizzle/hotfiles/tree/bspwm
