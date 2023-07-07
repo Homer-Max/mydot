@@ -27,6 +27,8 @@ wl-clip-xrdb
 clipman
 swappy 
 brightnessctl 
+eww
+bluetoothctl
 ```
 
 # moving config files

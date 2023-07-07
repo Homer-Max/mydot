@@ -6,7 +6,7 @@
  */
 
 configuration {
-    font:                "霞鹜文楷 12";
+ //   font:                "霞鹜文楷 12";
     show-icons:          true;
     icon-theme: 				 "Dracula";
     display-drun: 			 "";

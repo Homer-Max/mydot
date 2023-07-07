@@ -119,7 +119,8 @@
         },   
         "format": "{capacity}% {icon}",   
         "format-icons": ["", "", "", "", ""],
-        "on-click":"/usr/bin/power"
+        "on-click-right":"~/.config/eww/System-Menu/launch",
+        "on-click":"eww open-many --toggle background-closer powermenu"
         // "max-length": 25
     },
     "disk": {
