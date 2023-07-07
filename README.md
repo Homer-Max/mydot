@@ -33,6 +33,7 @@ swappy
 brightnessctl 
 eww
 bluetoothctl
+bluetooth
 ```
 
 # moving config files
@@ -40,6 +41,10 @@ bluetoothctl
 git clone  https://github.com/DreamMaoMao/mydot.git
 cd mydot
 cp -r ./* ~/.config
+```
+# service
+```
+sudo systemctl enable bluetooth
 ```
 
 # Reference
