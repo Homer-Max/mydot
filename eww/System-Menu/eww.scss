@@ -4,7 +4,8 @@
 }
 
 .system-menu {
-  background-color: $bg;
+  // background-color: $bg;
+  background-color: rgba(0,0,0,.5);
 }
 
 .first-row-system {
@@ -331,39 +332,6 @@
   font-family: "Sofia Pro";
   font-weight: 500;
   font-size: 22px;
-}
-
-.tips {
-  background-color: $bg;
-}
-
-.tips-header {
-  font-size: 22px;
-  color: $yellow;
-  margin: 20px 0px 0px 20px;
-}
-
-.tips-body {
-  margin: 10px 0px 0px 20px;
-  font-size: 19px;
-}
-
-.close-tips {
-  font-size: 24px;
-  color: $red;
-  margin: 20px 0px 0px 680px;
-}
-
-.tips-main-box {
-  margin: 0px 40px 15px 0px;
-  background-color: $gray-alt;
-  border-radius: 30px;
-}
-
-.tips-toggler {
-  padding: 0px 15px 0px 15px;
-  font-size: 18px;
-  font-family: "JetBrainsMono Nerd Font";
 }
 
 .battery-icon-charging {

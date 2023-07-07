@@ -22,10 +22,10 @@
 
 
 ;; for sliders
-(deflisten volume "System-Menu/scripts/sliders/volume-slider --value")
-(defpoll volume-slider-indicator :interval "0.5s" "System-Menu/scripts/sliders/volume-slider --icon")
-(deflisten brightness "System-Menu/scripts/sliders/brightness-slider --value")
-(defpoll brightness-slider-indicator :interval "0.5s" "System-Menu/scripts/sliders/brightness-slider --icon")
+(defpoll volume :interval "1s"  "System-Menu/scripts/sliders/volume-slider --value")
+(defpoll volume-slider-indicator :interval "1s" "System-Menu/scripts/sliders/volume-slider --icon")
+(defpoll brightness :interval "1s"   "System-Menu/scripts/sliders/brightness-slider --value")
+(defpoll brightness-slider-indicator :interval "1s" "System-Menu/scripts/sliders/brightness-slider --icon")
 
 ;; widget
 
@@ -111,6 +111,6 @@
   :windowtype "normal"
   :wm-ignore true
   :monitor 0
-  :geometry (geometry :x 76 :width 300 :height 300 :y 80 :x 1050)
+  :geometry (geometry :x 76 :width 300 :height 300 :y 180 :x 550)
   (system))
 

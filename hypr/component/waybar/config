@@ -140,6 +140,7 @@
         "format-linked": "\uf059 No IP ({ifname})",
         "format-disconnected": "\uf071 Disconnected",
         "tooltip-format": "{ifname} {ipaddr}/{cidr} via {gwaddr}",
-        "format-alt": "\uf1eb↓{bandwidthDownBytes} ↑{bandwidthUpBytes}"
+        "format-alt": "\uf1eb↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+        "on-click-right":"~/.config/eww/System-Menu/scripts/networkmanager_dmenu"
     }
 }
