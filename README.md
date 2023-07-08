@@ -87,17 +87,17 @@ sudo systemctl enable bluetooth
 |调整窗口大小| super + 按住鼠标左键移动
 
 # waybar操作(配置-hypr/component/waybar/config)
-如果waybar有任何控件显示不正常 就要去这个配置下看看,修改成你自己的,
-比如特别要注意的
+如果waybar有任何控件显示不正常 就要去这个配置下看看,修改成你自己的,一般以下
+几个可能会需要修改一下
 ```
-背光:ls /sys/class/backlight/ 获得背光设备名
-电池:acpi -b 得到电池编号如果是0 那就是BAT0
-温度:这个路径不大统一,可以去这个路径下找找/sys/class/hwmon/
+背光(device选项):ls /sys/class/backlight/ 获得背光设备名
+电池(bat选项):acpi -b 得到电池编号如果是0 那就是BAT0
+温度(hwmon-path选项):这个路径不大统一,找不到可以用这个路径/sys/class/thermal/thermal_zone*/temp 
 ```
 ```json
     "temperature": {
         "thermal-zone": 2,
-        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+        "hwmon-path": "/sys/class/thermal/thermal_zone*/temp",
         "critical-threshold": 10,
         "format-critical": "{temperatureC}°C",
         "format": ""
@@ -141,7 +141,7 @@ sudo systemctl enable bluetooth
 |切换到某个工作区        |   左键工作区图标    
 
 
-# 系统不一样可能要修改的地方
+# 可能要修改的地方
 ## hypr/bingkey.conf
 - terminal(这个改成你自己要的终端,我这里是gnome-terminal)
 ```conf
@@ -165,22 +165,7 @@ bind=ALT,code:83,movetoworkspace,4
 bind=ALT,code:84,movetoworkspace,5
 bind=ALT,code:85,movetoworkspace,6
 ```
-- system sleep(我这里是ubuntu的挂起指令改成属于你自己发行版的,这里是systemctl suspend)
-```conf
-bind = SUPER,b,exec,sudo systemctl suspend
-```
-## eww/Misc/eww.yuck
-- 17行:这里的挂起指令也改成你的发行版本的,这里是systemctl suspend
-```css
-(button :tooltip "Suspend" :class "suspend" :onclic"systemctl suspend" "")
-```
 
-## eww/System-Menu/scripts/network
-- 2行:改成你的网卡名 这里的是wlp1s0
-```shell
-STATUS=$(nmcli | grep wlp1s0 | awk 'FNR == 1 {print $1}' | awk -F '：' '{print $2}')
-
-```
 ## hypr/exec.conf
 - 权限认证工具的路径,policykit-gnome这个包安装好之后注意查看polkit-gnome-authentication-agent-1安装到那个路径下了
 ```conf
