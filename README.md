@@ -142,7 +142,7 @@ sudo systemctl enable bluetooth
 
 
 # 系统不一样可能要修改的地方
-## hypr/bingkey.con
+## hypr/bingkey.conf
 - terminal(这个改成你自己要的终端,我这里是gnome-terminal)
 ```conf
 bind=ALT,RETURN,exec,gnome-terminal
@@ -180,6 +180,11 @@ bind = SUPER,b,exec,sudo systemctl suspend
 ```shell
 STATUS=$(nmcli | grep wlp1s0 | awk 'FNR == 1 {print $1}' | awk -F '：' '{print $2}')
 
+```
+## hypr/exec.conf
+- 权限认证工具的路径,policykit-gnome这个包安装好之后注意查看polkit-gnome-authentication-agent-1安装到那个路径下了
+```conf
+exec-once=/usr/local/libexec/polkit-gnome-authentication-agent-1 &
 ```
 
 
