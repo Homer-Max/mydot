@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 ## Collect data
 cache_dir="$HOME/.cache/eww/weather"
@@ -20,7 +20,7 @@ fi
 ## Get data
 get_weather_data() {
 	weather=`curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID="$KEY"&id="$ID"&units="$UNIT""`
-	echo ${weather}
+	# echo ${weather}
 
 	if [ ! -z "$weather" ]; then
 		weather_temp=`echo "$weather" | jq ".main.temp" | cut -d "." -f 1`
@@ -104,6 +104,7 @@ get_weather_data() {
 	fi
 }
 
+get_weather_data
 ## Execute
 if [[ "$1" == "--getdata" ]]; then
 	get_weather_data

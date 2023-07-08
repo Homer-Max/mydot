@@ -11,9 +11,10 @@
   (box :class "main-box" :orientation "v" :space-evenly "false"
     (label :class "greeting" :text greeting :space-evenly "false")
     (box :class "main-buttons-box" :orientation "h" :space-evenly "false"
-      (button :tooltip "Shutdown your PC." :class "shutdown" :onclick "shutdown now" "󰐥")
-      (button :tooltip "Reboot your PC." :class "reboot" :onclick "reboot" "󰜉")
-      (button :tooltip "Exit Hyprland." :class "exit" :onclick "hyprctl dispatch exit" "󰍃")
+      (button :tooltip "Shutdown" :class "shutdown" :onclick "shutdown now" "󰐥")
+      (button :tooltip "Reboot" :class "reboot" :onclick "reboot" "󰜉")
+      (button :tooltip "Exit" :class "exit" :onclick "hyprctl dispatch exit" "󰍃")
+      (button :tooltip "Suspend" :class "suspend" :onclick "systemctl suspend" "")
       (button :tooltip "Lock" :class "lock" :onclick "swaylock -f -c 000000" "󰌾"))))
 
 (defwidget volume-indicator[]
