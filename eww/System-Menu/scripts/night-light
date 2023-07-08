@@ -5,8 +5,10 @@ is_active=$(pgrep wlsunset)
 toggle() {
     if [[ -n $is_active ]]; then
         pkill wlsunset
+        notify-send --icon=window-close --urgency=normal "Night Light" "Night Light has been turned off!"
     else
         wlsunset -T 3501 -t 3500 &
+notify-send --icon=checkmark --urgency=normal "Night Light" "Night Light has been turned on!"
     fi
 }
 
