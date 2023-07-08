@@ -1,4 +1,0 @@
-#!/usr/bin/bash
-temp=$(sensors | grep temp1:)
-temp=${temp:15:-21}
-echo "$temp"

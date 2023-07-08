@@ -4,7 +4,7 @@ SSID=$(iwgetid | awk -F '"' '{ print $2 }')
 STRENGTH=$(awk 'NR==3 {printf("%.0f",$3*10/7)}' /proc/net/wireless)
 
 toggle() {
-    if [[ $STATUS == "已连接" ]]; then
+    if [[ $STATUS == "已连接" || $STATUS == "connected" ]]; then
         nmcli radio wifi off
         notify-send --icon=window-close --urgency=normal "Wi-Fi" "Wi-Fi has been turned off!"
     else
@@ -30,7 +30,7 @@ icon() {
 }
 
 status() {
-    if [[ $STATUS == "已连接" ]]; then
+    if [[ $STATUS == "已连接" || $STATUS == "connected" ]]; then
         echo $SSID
     else
         echo Disconnected
@@ -38,7 +38,7 @@ status() {
 }
 
 class(){
-    if [[ $STATUS == "已连接" ]]; then
+    if [[ $STATUS == "已连接" || $STATUS == "connected" ]]; then
         echo "󰤨"
     else
         echo "󰤭"
