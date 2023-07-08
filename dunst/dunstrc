@@ -457,10 +457,3 @@ script = "~/.config/hypr/scripts/tools/notif"
 summary = "*"
 script = "~/.config/hypr/scripts/tools/notif"
 
-[spotify]
-summary = "*"
-script = "~/.scripts/music-art"
-
-[spotify-icon]
-appname = "Spotify"
-icon = "~/.cache/temp.png"
