@@ -449,11 +449,5 @@
 #    appname = "some_volume_notifiers"
 #    set_stack_tag = "volume"
 #
-[redirect]
-summary = "*"
-script = "~/.config/hypr/scripts/tools/notif"
 
-[logger]
-summary = "*"
-script = "~/.config/hypr/scripts/tools/notif"
 
