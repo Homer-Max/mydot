@@ -90,9 +90,9 @@ sudo systemctl enable bluetooth
 如果waybar有任何控件显示不正常 就要去这个配置下看看,修改成你自己的,一般以下
 几个可能会需要修改一下
 ```
+温度(hwmon-path选项):这个路径不大统一,找不到可以用这个路径/sys/class/thermal/thermal_zone*/temp 
 背光(device选项):ls /sys/class/backlight/ 获得背光设备名
 电池(bat选项):acpi -b 得到电池编号如果是0 那就是BAT0
-温度(hwmon-path选项):这个路径不大统一,找不到可以用这个路径/sys/class/thermal/thermal_zone*/temp 
 ```
 ```json
     "temperature": {
