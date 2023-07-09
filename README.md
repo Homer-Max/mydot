@@ -41,6 +41,7 @@ bluetooth
 git clone  https://github.com/DreamMaoMao/mydot.git
 cd mydot
 cp -r ./* ~/.config
+cp -r fcitx_skin/blackcat /usr/share/fcitx/skin/
 ```
 # service
 ```

@@ -25,17 +25,6 @@
               "wofi"  
                        ]
       },
-//  "custom/cycle_wall":{
-//      "format":"{}",
-//      "exec": "~/.config/hypr/scripts/tools/expand wall",
-//      // "interval": 1,
-//      "on-click": "~/.config/hypr/scripts/tools/expand cycle"
-//  },
-//  "custom/expand":{
-//      "on-click":"~/.config/hypr/scripts/expand_toolbar",
-//      "format":"{}",
-//      "exec":"~/.config/hypr/scripts/tools/expand arrow-icon"
-//  }, 
  "pulseaudio": {
         "interval":1,
         "scroll-step": 1, 
